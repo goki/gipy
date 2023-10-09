@@ -355,7 +355,7 @@ def SetFloatValCB(recv, send, sig, data):
     setattr(cv.Class, nms[1], float(vw.Value))
 
 def EditObjCB(recv, send, sig, data):
-    vw = gi.Action(handle=send)
+    vw = gi.Button(handle=send)
     nm = vw.Name()
     nms = nm.split(':')
     cv = classviews[nms[0]]
